@@ -1,6 +1,38 @@
-body {
-    min-height: 100vh;
-    min-width: 100vw;
+html, body {
+    height: 100%;
     margin: 0;
-    padding: 0;
+}
+
+body {
+    height: 100vh;
+}
+
+.main-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 7%;
+}
+
+.container-one {
+    border: 1px solid black;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    height: 60%;
+    width: 25%;
+}
+
+.container-two {
+    border: 1px solid black;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    height: 60%;
+    width: 25%;
+}
+
+.container-three {
+    border: 1px solid black;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    height: 60%;
+    width: 25%;
 }
