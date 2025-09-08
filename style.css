@@ -21,28 +21,54 @@ body {
 .container-one {
     display: flex;
     flex-direction: column;
-    background: rgba(255, 255, 255, 0.129);
+    position: relative;
+    /* background: rgba(255, 255, 255, 0.189); */
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(6.2px);
-    -webkit-backdrop-filter: blur(6.2px);
+    /* backdrop-filter: blur(6.2px); */
+    /* -webkit-backdrop-filter: blur(6.2px); */
     border: 1px solid rgba(255, 255, 255, 0.292);
     height: 70%;
     width: 25%;
     border-radius: 1rem;
     overflow: hidden;
+    /* background-image: url(redbull.png);
+    background-size: 220% auto;
+    background-position: 80% 30%;
+    background-repeat: no-repeat; */
+}
+
+#container-bg {
+    position: absolute;
+    top: 0;
+    right: 10%;
+    width: 160%;
+    height: 100%;
+    object-fit: cover; /* To mantain aspect ratio*/
+    z-index: -1;
+    opacity: 0.4;
 }
 
 .top-section-one {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 65%;
     width: 100%;
-    border-radius: inherit;
+    /* border-radius: inherit; */
+    background: rgba(255, 255, 255, 0.120);
+    backdrop-filter: blur(1.5px);
+}
+
+.top-section-one img {
+    height: auto;
+    width: 90%;
 }
 
 .bottom-section-one {
     width: 100%;
     height: 35%;
-    background: rgba(255, 255, 255, 0.045);
+    background: rgba(255, 255, 255, 0.232);
     backdrop-filter: blur(6.2px);
     -webkit-backdrop-filter: blur(6.2px);
 }
