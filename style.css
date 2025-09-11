@@ -7,6 +7,7 @@ body {
 body {
     height: 100vh;
     background-image: url(background.jpg);
+    display: flex;
 }
 
 .main-container {
@@ -16,6 +17,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 7%;
+    flex-wrap: wrap;
 }
 
 .container-one, .container-two, .container-three {
@@ -28,8 +30,8 @@ body {
     /* backdrop-filter: blur(6.2px); */
     /* -webkit-backdrop-filter: blur(6.2px); */
     border: 1px solid rgba(255, 255, 255, 0.292);
-    height: 70%;
-    width: 25%;
+    height: clamp(50px, 70%, 1000px);
+    width: clamp(100px, 25%, 500px);
     border-radius: 1.5rem;
     overflow: hidden;
     /* background-image: url(redbull.png);
@@ -104,6 +106,7 @@ body {
     height: 50%;
     margin: 0;
     padding: 0;
+    flex-wrap: wrap;
 }
 
 .bottom-button-one, .bottom-button-two, .bottom-button-three {
@@ -134,12 +137,11 @@ h1 {
 }
 
 h2 {
-    font-size: 1.9rem;
+    font-size: 2.2vw;
     font-weight: normal;
     margin: 0;
     padding: 0;
-    margin-top: 6%;
-    margin-right: 5%;
+    margin-top: 5%;
 }
 
 h1, h2 {
