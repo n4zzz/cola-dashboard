@@ -205,6 +205,14 @@ h1, h2 {
 
 }
 
+@media (max-width: 800px) {
+    .buttons {
+        height: 2.2rem;
+        width: 5rem;
+        font-size: 0.9em;
+    }
+}
+
 @media (max-width: 300px) {
     h1 {
         font-size: 1.5em;
